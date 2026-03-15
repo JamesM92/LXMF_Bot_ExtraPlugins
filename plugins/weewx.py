@@ -81,9 +81,9 @@ SECTIONS = [
 ("Heat and Humidity", [
 
     metric("Temperature","outTemp","{:.2f}","°F", trend_threshold=0.2),
-    metric("Humidity","outHumidity","{:.0f}","%RH", trend_threshold=1),
-    metric("Heat Index","heatindex","{:.2f}","°F"),
-    metric("Dew Point","dewpoint","{:.2f}","°F")
+    metric("Humidity","outHumidity","\t\t{:.0f}","%RH", trend_threshold=1),
+    metric("Heat Index","heatindex","\t{:.2f}","°F"),
+    metric("Dew Point","dewpoint","\t{:.2f}","°F")
 
 ]),
 
@@ -113,7 +113,7 @@ SECTIONS = [
 
 ("Clouds and Lightning", [
 
-    metric("Cloud Base","cloudbase","{:.2f}"," ft"),
+    metric("Cloud Base","cloudbase","\t{:.2f}"," ft"),
 
     metric(
         "Lightning Dist",
